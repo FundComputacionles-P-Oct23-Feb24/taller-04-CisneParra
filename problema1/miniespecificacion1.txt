@@ -1,0 +1,19 @@
+1.Inicio
+2.valor_klvh, d[0-n]
+3.klv_mes, i[0-n]
+3.planilla, d[0-n]
+4.planilla_total, d[0-n]
+5.edad, i[0-n]
+6.<< "Ingrese el valor del kilovatio/hora"
+7.>> valor_klvh
+8.<< " Ingrese el numero de kilovatios consumidos en el mes"
+9.>> klv_mes
+10.planilla <--(klv_mes * valor_klvh)
+11.<< "Ingrese su edad"
+12.>> edad
+13.Si edad > 65 entonces
+14.	planilla_total <--[planilla * 0,10]
+15.<< "Su valor a cancelar es " + planilla_total
+15.Fin si
+16.<< "Su valor a cancelar es " + planilla
+17.Fin
